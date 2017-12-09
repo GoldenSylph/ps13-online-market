@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ps13-online-market" useHttpOnly="true">
+
+	<Resource driverClassName="org.postgresql.Driver" maxTotal="100"
+		maxIdle="200" maxWaitMillis="5000" name="jdbc/ps13_db" username="ps13_superuser"
+		password="123456" type="javax.sql.DataSource" url="jdbc:postgresql://localhost:5432/ps13_db"
+		validationQuery="SELECT 1">
+	</Resource>
+
+	<Realm className="org.apache.catalina.realm.CombinedRealm">
+		<Realm className="org.apache.catalina.realm.JDBCRealm"
+			driverName="org.postgresql.Driver" digest="MD5"
+			connectionURL="jdbc:postgresql://localhost:5432/ps13_db"
+			connectionName="ps13_superuser"
+			connectionPassword="123456"
+			userTable="users" userNameCol="user_email" userCredCol="user_password"
+			userRoleTable="users_to_roles" roleNameCol="role_name" />
+		<Realm className="org.apache.catalina.realm.JDBCRealm"
+			driverName="org.postgresql.Driver"
+			connectionURL="jdbc:postgresql://localhost:5432/ps13_db"
+			connectionName="ps13_superuser"
+			connectionPassword="123456"
+			userTable="users" userNameCol="user_email" userCredCol="user_uuid"
+			userRoleTable="users_to_roles" roleNameCol="role_name" />
+	</Realm>
+
+</Context>

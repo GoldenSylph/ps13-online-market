@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+	<excludes>
+		<pattern>/assets/*</pattern>
+		<pattern>/META-INF/*</pattern>
+		<pattern>*/prelogin*</pattern>
+		<pattern>*/login*</pattern>
+		<pattern>*/register*</pattern>
+		<pattern>prelogin.jsp</pattern>
+		<pattern>login.jsp</pattern>
+		<pattern>registration.jsp</pattern>
+		<pattern>error.jsp</pattern>
+	</excludes>
+
+	<decorator name="main" page="main.jsp">
+		<pattern>/</pattern>
+		<pattern>/about</pattern>
+		<pattern>/bugs</pattern>
+		<pattern>/buy</pattern>
+		<pattern>/profile</pattern>
+		<pattern>/admin</pattern>
+		<pattern>/logout</pattern>
+	</decorator>
+</decorators>
