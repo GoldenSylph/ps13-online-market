@@ -86,7 +86,7 @@
 	</div>
 	<footer class="footer">
 	  <div class="container">
-	    <span class="text-muted">&copy; 2017 Melon Games</span>
+	    <span class="text-muted">&copy; 2017 Melon Games. All rights reserved.</span>
 	  </div>
 	</footer>
   </body>

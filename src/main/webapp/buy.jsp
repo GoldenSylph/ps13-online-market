@@ -38,7 +38,14 @@
 	</c:choose>
 	<c:if test="${not empty addons.set}">
 		<c:forEach var="addon" items="${addons.set}" varStatus="loop">
-			<div class="jumbotron ps13-jumbotron-1">
+			<div class="jumbotron <c:choose>
+					<c:when test="${addon.enabled == false}">
+						ps13-jumbotron-1
+					</c:when>
+					<c:otherwise>
+						ps13-jumbotron-2
+					</c:otherwise>
+				</c:choose>">
 				<div class="container">
 					<h4 class="display-5">№<c:out value="${loop.index}"/> - <c:out value="${addon.name}"/></h4>
 					<p class="lead"><c:out value="${addon.description}"/></p>

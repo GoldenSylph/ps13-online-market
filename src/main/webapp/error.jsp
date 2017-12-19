@@ -40,6 +40,10 @@
 					<p class="lead">
 						Error URI:
 						<c:out value="${pageContext.errorData.requestURI}"/>
+						<br>
+						<c:if test="${pageContext.errorData.statusCode == 403}">
+							You've got no rights to access this resource.
+						</c:if>
 					</p>
 					<p class="lead">
 						<a class="btn btn-primary btn-lg ps13-shadow" href="<c:url value="/"/>"

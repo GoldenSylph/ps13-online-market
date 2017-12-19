@@ -6,6 +6,7 @@
 		<!-- Amazing description -->
 		<div class="jumbotron ps13-jumbotron-0">
 		  <!-- Trailer -->
+		  <p class="lead"><b>TRAILER</b></p>
 		  <hr class="my-4">
 		  <p>Polar Station 13 is a game about researching glacier tunnels, rifts and caves looking for useful resources 
 		  	and minerals. At first, you build the station for robot called kryobot that allows you to melt the glacier and go deeper into
@@ -16,7 +17,7 @@
 		  </p>
 		</div>
 		<div class="jumbotron ps13-jumbotron-0">
-		  <!-- Carousel with screenshots -->
+		  <p class="lead"><b>Carousel with screenshots</b></p>
 		</div>
 	</div>
 </div>

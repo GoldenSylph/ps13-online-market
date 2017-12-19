@@ -7,8 +7,8 @@
   	So your game is crashed, or you found an error and everything is glitching?
   </p> 
   <hr class="my-4"> 
-  <p>You can help us to develop the game! We would be very grateful if you 
-  		contact us through this form about all the bugs in the game.
+  <p>You can help us to develop the game! We would be very grateful if you'd 
+  		contact us through this form about all the bugs and challenges in the game.
   </p>
   <form enctype="multipart/form-data" action="<c:url value="/bugs"/>" method="POST">
   	<c:if test="${ not empty requestScope.error }">
@@ -35,7 +35,7 @@
 	</div>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<div class="g-recaptcha form-group" data-sitekey="6LedYjkUAAAAAFgwbgGopPte9iuYBN54pqm0EAJt"></div>
-	<button class="btn btn-success btn-lg" type="submit" role="button">Submit a bug</button>
+	<button class="btn btn-success btn-lg ps13-shadow-green" type="submit" role="button">Submit a bug</button>
   </form>
   
 </div>
